@@ -1,0 +1,55 @@
+https://www.kaggle.com/datasets/razamh/pubg-dataset
+
+- `Id`: 玩家 ID 
+  - 唯一标识一个玩家
+- `groupId`: 本局小队 ID
+  - 同一拨朋友开黑，每开一局都会生成一个新的 groupId。不是永久固定的战队 ID
+- `matchId`: 对局 ID
+  - 标识一整局比赛。训练集和测试集的对局完全不重复
+- `assists`: 助攻数
+  - 你对敌人造成了伤害，但最后这个人头被队友收掉了，算你一次助攻
+- `boosts`:  能量道具使用次数
+  - 能量饮料、止痛药、肾上腺素等"跑毒/加移速"的道具
+- `damageDealt`: 造成的总伤害
+  - ⚠️ 自伤（如摔伤、手雷炸到自己）会被扣除，所以不一定是你对敌人造成的真实伤害
+- `DBNOs`: 击倒数
+  - DBNO = Down But Not Out（倒地但未出局）。组队模式下，敌人会先被击倒（可以爬动、被队友扶起），不一定直接死亡
+- `headshotKills`: 爆头击杀数
+  - 一枪/一梭子打头直接带走的人头数
+- `heals`: 治疗道具使用次数
+  - 医疗包、绷带等回血道具
+- `killPlace`: 击杀排名
+  - 按击杀数在本局所有玩家中的排名（比如你杀了 5 个，排第 10 名）
+- `killPoints`: 基于击杀的 Elo 排名分
+  - 只看你杀人猛不猛的天梯分。⚠️ 清洗规则：如果 rankPoints 不是 -1，那么 killPoints 为 0 时不要当真，应该视为缺失值（None）
+- `kills`: 击杀数
+  - 本局总共淘汰的敌人数量
+- `killStreaks`: 最高连杀数
+  - 短时间内连续击杀敌人的最大次数（比如 30 秒内连杀 3 人，则记为 3）
+- `longestKill`: 最远击杀距离（米）
+  - ⚠️ 这个字段容易有误导性。比如你把敌人击倒后开车跑了几百米，等他流血流死，系统会把这个超远距离算进去
+- `matchDuration`: 对局时长（秒）
+  - 从飞机起飞到决出胜负的总时间
+- `matchType`: 游戏模式
+  - solo=单排, duo=双排, squad=四排；带 -fpp 后缀的是第一人称视角（First Person Perspective）
+- `maxPlace`: 本局最差名次
+  - 数据集中记录到的本局最低排名。⚠️ 它和 numGroups 可能不一致，因为数据可能跳过了某些名次
+- `numGroups`: 本局队伍总数
+  - 本局有多少个不同的小队/小组有数据记录
+- `rankPoints`: 综合 Elo 排名分
+  - 官方的综合天梯分，但数据不稳定，API 下一版本要弃用。-1 代表缺失值（None）
+- `revives`: 救起队友次数
+  - 队友被击倒后，你把他扶起来的次数
+- `rideDistance`: 载具行驶总距离
+- `roadKills`: 载具撞击击杀
+  - 开车撞死敌人的次数
+- `swimDistance`: 游泳总距离
+- `teamKills`: 误杀队友数
+  - 把队友干掉的次数（友军伤害）
+- `vehicleDestroys`: 摧毁载具数
+  - 打爆了多少辆车/船/飞机
+- `walkDistance`: 步行总距离
+- `weaponsAcquired`: 拾取武器数
+  - 捡了多少把枪（不是身上带了几把，是"捡"这个动作的次数）
+- `winPoints`: 基于胜利的 Elo 排名分
+  - 只看你吃鸡/排名高的天梯分。⚠️ 同样的清洗规则：rankPoints ≠ -1 时，winPoints = 0 视为缺失
