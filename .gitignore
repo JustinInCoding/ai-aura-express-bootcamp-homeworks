@@ -235,3 +235,6 @@ project-workshop-2026-08-15/template
 
 # workbuddy 辅助脚本（PPT 生成/图表生成，不入库）
 project-workshop-2026-08-15/workbuddy-tooling
+
+# 打包 zip 文件
+**/*.zip
