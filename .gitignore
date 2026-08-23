@@ -221,3 +221,17 @@ __marimo__/
 homework-*/*/data
 .DS_Store
 .codebuddy
+
+project-workshop-*/data
+
+# 演示 PPT（由 workbuddy 生成，不入库）
+**/*.pptx
+
+# 项目结果产物（图表/CSV/评估表，由 src/ 脚本可随时重新生成，不入库）
+project-workshop-2026-08-15/results
+
+# PPT 模板（由 workbuddy 使用，不入库）
+project-workshop-2026-08-15/template
+
+# workbuddy 辅助脚本（PPT 生成/图表生成，不入库）
+project-workshop-2026-08-15/workbuddy-tooling
