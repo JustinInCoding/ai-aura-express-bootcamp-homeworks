@@ -238,3 +238,6 @@ project-workshop-2026-08-15/workbuddy-tooling
 
 # 打包 zip 文件
 **/*.zip
+
+# .pdf
+**/*.pdf
