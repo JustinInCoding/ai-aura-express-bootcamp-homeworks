@@ -1,0 +1,88 @@
+{
+  "model": "vgg",
+  "params": 1128938,
+  "best_test_acc": 99.29000091552734,
+  "final_test_acc": 99.18000030517578,
+  "best_per_class_acc": [
+    99.48979949951172,
+    99.91189575195312,
+    98.9341049194336,
+    99.8019790649414,
+    99.49082946777344,
+    99.6636734008789,
+    98.22547149658203,
+    99.41634368896484,
+    98.7679672241211,
+    99.1080322265625
+  ],
+  "total_min": 0.7145004442582528,
+  "sec_per_epoch": 8.574005331099034,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.08458326578959822,
+      "train_acc": 97.68333333333334,
+      "test_acc": 98.88999938964844,
+      "lr": 0.001,
+      "sec": 9.0733552724123
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.03424247561457257,
+      "train_acc": 98.95166666666667,
+      "test_acc": 98.62999725341797,
+      "lr": 0.001,
+      "sec": 7.956700935959816
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.02735313917233919,
+      "train_acc": 99.15166666666667,
+      "test_acc": 98.90999603271484,
+      "lr": 0.001,
+      "sec": 8.688055388629436
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.020719381383992732,
+      "train_acc": 99.37333333333333,
+      "test_acc": 99.29000091552734,
+      "lr": 0.001,
+      "sec": 8.42552800104022
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.019213009517942557,
+      "train_acc": 99.37166666666667,
+      "test_acc": 99.18000030517578,
+      "lr": 0.001,
+      "sec": 8.726387057453394
+    }
+  ],
+  "hparams": {
+    "model": "vgg",
+    "epochs": 5,
+    "batch_size": 64,
+    "lr": 0.001,
+    "optimizer": "adam",
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "scheduler": "none",
+    "augment": false,
+    "seed": 42,
+    "device": "auto",
+    "num_workers": 4,
+    "cudnn_benchmark": true,
+    "resume": true,
+    "limit_batches": 0,
+    "out": "./results",
+    "tag": "adam"
+  },
+  "env": {
+    "torch": "2.8.0+cu128",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda": "12.8",
+    "cudnn": 91002
+  }
+}

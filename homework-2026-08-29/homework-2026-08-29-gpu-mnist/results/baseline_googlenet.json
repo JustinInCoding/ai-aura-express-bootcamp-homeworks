@@ -1,0 +1,88 @@
+{
+  "model": "googlenet",
+  "params": 266554,
+  "best_test_acc": 99.4000015258789,
+  "final_test_acc": 99.4000015258789,
+  "best_per_class_acc": [
+    99.48979949951172,
+    99.73567962646484,
+    99.22480773925781,
+    100.0,
+    99.28717041015625,
+    98.5426025390625,
+    99.47808074951172,
+    99.22178649902344,
+    99.6919937133789,
+    99.2071304321289
+  ],
+  "total_min": 1.5455780833338697,
+  "sec_per_epoch": 18.546937000006437,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.2640124820560217,
+      "train_acc": 92.68666666666667,
+      "test_acc": 97.93000030517578,
+      "lr": 0.01,
+      "sec": 19.19326874613762
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.05610613897293806,
+      "train_acc": 98.40833333333333,
+      "test_acc": 98.13999938964844,
+      "lr": 0.01,
+      "sec": 18.793556977063417
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.04032132877881328,
+      "train_acc": 98.855,
+      "test_acc": 99.06999969482422,
+      "lr": 0.01,
+      "sec": 18.237455863505602
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.029977649581991134,
+      "train_acc": 99.125,
+      "test_acc": 99.19000244140625,
+      "lr": 0.01,
+      "sec": 18.11309564858675
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.026323952913905182,
+      "train_acc": 99.20166666666667,
+      "test_acc": 99.4000015258789,
+      "lr": 0.01,
+      "sec": 18.397307764738798
+    }
+  ],
+  "hparams": {
+    "model": "googlenet",
+    "epochs": 5,
+    "batch_size": 64,
+    "lr": 0.01,
+    "optimizer": "sgd",
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "scheduler": "none",
+    "augment": false,
+    "seed": 42,
+    "device": "auto",
+    "num_workers": 4,
+    "cudnn_benchmark": true,
+    "resume": true,
+    "limit_batches": 0,
+    "out": "./results",
+    "tag": "baseline"
+  },
+  "env": {
+    "torch": "2.8.0+cu128",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda": "12.8",
+    "cudnn": 91002
+  }
+}

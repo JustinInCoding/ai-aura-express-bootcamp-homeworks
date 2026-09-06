@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+data/
+logs/
+results/ckpt_*.pt
+results/mnist_png/
+.DS_Store

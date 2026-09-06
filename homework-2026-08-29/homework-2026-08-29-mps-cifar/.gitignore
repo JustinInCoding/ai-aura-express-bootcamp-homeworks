@@ -1,0 +1,6 @@
+# 数据集太大不入库（下载脚本：python train.py 任意跑一次会自动下载）
+data/
+
+# 训练产物：结果 json / 曲线图入表，模型权重不入库
+runs/*.pth
+__pycache__/

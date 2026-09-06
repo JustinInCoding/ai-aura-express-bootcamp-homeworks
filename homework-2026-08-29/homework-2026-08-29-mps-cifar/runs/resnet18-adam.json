@@ -1,0 +1,118 @@
+{
+  "tag": "resnet18-adam",
+  "model": "resnet18",
+  "params": 11173962,
+  "config": {
+    "model": "resnet18",
+    "tag": "resnet18-adam",
+    "epochs": 10,
+    "batch_size": 128,
+    "lr": 0.001,
+    "optimizer": "adam",
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "scheduler": "cosine",
+    "no_aug": false,
+    "workers": 0,
+    "data_dir": "data",
+    "out_dir": "runs",
+    "seed": 42,
+    "limit_batches": 0,
+    "device": "mps"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "lr": 0.001,
+      "train_loss": 1.4816,
+      "train_acc": 0.4511,
+      "test_loss": 1.2638,
+      "test_acc": 0.5584,
+      "sec": 175.6
+    },
+    {
+      "epoch": 2,
+      "lr": 0.001,
+      "train_loss": 1.0282,
+      "train_acc": 0.6317,
+      "test_loss": 0.9566,
+      "test_acc": 0.6649,
+      "sec": 178.2
+    },
+    {
+      "epoch": 3,
+      "lr": 0.001,
+      "train_loss": 0.8343,
+      "train_acc": 0.705,
+      "test_loss": 0.9113,
+      "test_acc": 0.6871,
+      "sec": 176.5
+    },
+    {
+      "epoch": 4,
+      "lr": 0.001,
+      "train_loss": 0.6943,
+      "train_acc": 0.7586,
+      "test_loss": 0.8623,
+      "test_acc": 0.7186,
+      "sec": 181.9
+    },
+    {
+      "epoch": 5,
+      "lr": 0.001,
+      "train_loss": 0.5948,
+      "train_acc": 0.7954,
+      "test_loss": 0.645,
+      "test_acc": 0.7821,
+      "sec": 179.2
+    },
+    {
+      "epoch": 6,
+      "lr": 0.001,
+      "train_loss": 0.5106,
+      "train_acc": 0.8276,
+      "test_loss": 0.5944,
+      "test_acc": 0.8024,
+      "sec": 179.1
+    },
+    {
+      "epoch": 7,
+      "lr": 0.001,
+      "train_loss": 0.4314,
+      "train_acc": 0.8518,
+      "test_loss": 0.567,
+      "test_acc": 0.8116,
+      "sec": 179.1
+    },
+    {
+      "epoch": 8,
+      "lr": 0.001,
+      "train_loss": 0.356,
+      "train_acc": 0.8778,
+      "test_loss": 0.4175,
+      "test_acc": 0.858,
+      "sec": 179.0
+    },
+    {
+      "epoch": 9,
+      "lr": 0.001,
+      "train_loss": 0.286,
+      "train_acc": 0.9023,
+      "test_loss": 0.3372,
+      "test_acc": 0.8884,
+      "sec": 179.1
+    },
+    {
+      "epoch": 10,
+      "lr": 0.001,
+      "train_loss": 0.2378,
+      "train_acc": 0.9192,
+      "test_loss": 0.3131,
+      "test_acc": 0.8958,
+      "sec": 180.1
+    }
+  ],
+  "best_acc": 0.8958,
+  "best_epoch": 10,
+  "total_sec": 1788.8
+}

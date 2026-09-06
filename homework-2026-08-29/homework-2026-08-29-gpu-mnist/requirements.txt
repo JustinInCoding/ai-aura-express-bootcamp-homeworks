@@ -1,0 +1,6 @@
+# AutoDL 的 PyTorch 镜像已自带 torch / torchvision，不要用 pip 重装 ——
+# 官方源装的是 CPU 版轮子，会把镜像里的 CUDA 版覆盖掉，训练直接掉回 CPU。
+# 先跑 setup.sh 里的校验，确认 torch.cuda.is_available() 为 True 再说。
+#
+# 需要手动补的只有画图这一项：
+matplotlib>=3.7

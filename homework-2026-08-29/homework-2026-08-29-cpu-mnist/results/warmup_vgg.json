@@ -1,0 +1,46 @@
+{
+  "model": "vgg",
+  "params": 1128938,
+  "best_test_acc": 98.76000213623047,
+  "final_test_acc": 98.76000213623047,
+  "best_per_class_acc": [
+    99.59184265136719,
+    99.20704650878906,
+    99.6124038696289,
+    99.60396575927734,
+    97.2505111694336,
+    98.65470886230469,
+    96.97286224365234,
+    98.92996215820312,
+    98.56262969970703,
+    99.00891876220703
+  ],
+  "total_min": 2.1492495345166693,
+  "sec_per_epoch": 128.95497207100016,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.10374441273088257,
+      "train_acc": 97.27,
+      "test_acc": 98.76000213623047,
+      "lr": 0.01,
+      "sec": 128.9547285610006
+    }
+  ],
+  "hparams": {
+    "model": "vgg",
+    "epochs": 1,
+    "batch_size": 64,
+    "lr": 0.01,
+    "optimizer": "sgd",
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "scheduler": "none",
+    "augment": false,
+    "seed": 42,
+    "num_workers": 0,
+    "limit_batches": 0,
+    "out": "./results",
+    "tag": "warmup"
+  }
+}

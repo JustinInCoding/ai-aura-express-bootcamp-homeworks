@@ -1,0 +1,88 @@
+{
+  "model": "alexnet",
+  "params": 4818634,
+  "best_test_acc": 99.31999969482422,
+  "final_test_acc": 99.31999969482422,
+  "best_per_class_acc": [
+    99.69387817382812,
+    99.64757537841797,
+    98.74031066894531,
+    99.90099334716797,
+    99.49082946777344,
+    98.99102783203125,
+    99.2693099975586,
+    99.41634368896484,
+    99.6919937133789,
+    98.3151626586914
+  ],
+  "total_min": 0.5637947403515379,
+  "sec_per_epoch": 6.765536884218454,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.42291652913689615,
+      "train_acc": 85.36333333333333,
+      "test_acc": 98.06999969482422,
+      "lr": 0.01,
+      "sec": 6.987768799066544
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.06274110646918415,
+      "train_acc": 98.075,
+      "test_acc": 98.8499984741211,
+      "lr": 0.01,
+      "sec": 6.580754932016134
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.04265432240894685,
+      "train_acc": 98.695,
+      "test_acc": 98.94000244140625,
+      "lr": 0.01,
+      "sec": 6.747287314385176
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.032828878419908385,
+      "train_acc": 98.985,
+      "test_acc": 99.20999908447266,
+      "lr": 0.01,
+      "sec": 6.5879369005560875
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.025448655850005646,
+      "train_acc": 99.21333333333334,
+      "test_acc": 99.31999969482422,
+      "lr": 0.01,
+      "sec": 6.923936475068331
+    }
+  ],
+  "hparams": {
+    "model": "alexnet",
+    "epochs": 5,
+    "batch_size": 64,
+    "lr": 0.01,
+    "optimizer": "sgd",
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "scheduler": "none",
+    "augment": false,
+    "seed": 42,
+    "device": "auto",
+    "num_workers": 4,
+    "cudnn_benchmark": true,
+    "resume": true,
+    "limit_batches": 0,
+    "out": "./results",
+    "tag": "baseline"
+  },
+  "env": {
+    "torch": "2.8.0+cu128",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda": "12.8",
+    "cudnn": 91002
+  }
+}

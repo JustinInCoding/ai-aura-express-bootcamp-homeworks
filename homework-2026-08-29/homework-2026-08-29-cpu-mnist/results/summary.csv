@@ -1,0 +1,16 @@
+tag,model,params,epochs,batch_size,lr,optimizer,momentum,weight_decay,scheduler,augment,best_test_acc,final_test_acc,sec_per_epoch,total_min
+warmup,vgg,1128938,1,64,0.01,sgd,0.9,0.0,none,False,98.76,98.76,129.0,2.15
+baseline,alexnet,4818634,5,64,0.01,sgd,0.9,0.0,none,False,99.26,99.22,421.3,35.11
+baseline,vgg,1128938,5,64,0.01,sgd,0.9,0.0,none,False,99.29,99.19,116.6,9.72
+baseline,googlenet,266554,5,64,0.01,sgd,0.9,0.0,none,False,99.36,99.36,354.8,29.56
+baseline,resnet,2759914,5,64,0.01,sgd,0.9,0.0,none,False,99.37,99.24,315.4,26.29
+lr001,vgg,1128938,5,64,0.001,sgd,0.9,0.0,none,False,99.32,99.32,120.0,10.0
+lr1,vgg,1128938,5,64,0.1,sgd,0.9,0.0,none,False,99.32,99.2,116.2,9.68
+adam,vgg,1128938,5,64,0.001,adam,0.9,0.0,none,False,99.09,99.09,121.1,10.09
+bs256,vgg,1128938,5,256,0.01,sgd,0.9,0.0,none,False,99.22,99.22,112.2,9.35
+cosine,vgg,1128938,5,64,0.01,sgd,0.9,0.0,cosine,False,99.49,99.49,116.6,9.72
+augment,vgg,1128938,5,64,0.01,sgd,0.9,0.0,none,True,99.47,99.47,125.6,10.47
+e20_base,vgg,1128938,20,64,0.01,sgd,0.9,0.0,none,False,99.53,99.51,113.8,37.95
+e20_cos,vgg,1128938,20,64,0.01,sgd,0.9,0.0,cosine,False,99.49,99.46,118.4,39.47
+e20_aug,vgg,1128938,20,64,0.01,sgd,0.9,0.0,none,True,99.57,99.47,132.1,44.04
+e20_cosaug,vgg,1128938,20,64,0.01,sgd,0.9,0.0,cosine,True,99.67,99.65,132.2,44.06

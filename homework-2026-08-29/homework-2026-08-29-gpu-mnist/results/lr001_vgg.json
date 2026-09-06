@@ -1,0 +1,88 @@
+{
+  "model": "vgg",
+  "params": 1128938,
+  "best_test_acc": 99.25,
+  "final_test_acc": 99.12999725341797,
+  "best_per_class_acc": [
+    99.69387817382812,
+    99.5594711303711,
+    99.6124038696289,
+    99.90099334716797,
+    99.49082946777344,
+    98.43048858642578,
+    98.43424224853516,
+    99.02723693847656,
+    99.07597351074219,
+    99.1080322265625
+  ],
+  "total_min": 0.6823978268851837,
+  "sec_per_epoch": 8.188773922622204,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.3039786047061284,
+      "train_acc": 94.27166666666666,
+      "test_acc": 98.48999786376953,
+      "lr": 0.001,
+      "sec": 8.527979142963886
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.05418765754352013,
+      "train_acc": 98.77666666666667,
+      "test_acc": 98.97000122070312,
+      "lr": 0.001,
+      "sec": 8.098895281553268
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.03493331890404224,
+      "train_acc": 99.20833333333333,
+      "test_acc": 99.19000244140625,
+      "lr": 0.001,
+      "sec": 8.158667452633381
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.025196315110723178,
+      "train_acc": 99.435,
+      "test_acc": 99.25,
+      "lr": 0.001,
+      "sec": 8.215124018490314
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.01834821979453166,
+      "train_acc": 99.60833333333333,
+      "test_acc": 99.12999725341797,
+      "lr": 0.001,
+      "sec": 7.943203717470169
+    }
+  ],
+  "hparams": {
+    "model": "vgg",
+    "epochs": 5,
+    "batch_size": 64,
+    "lr": 0.001,
+    "optimizer": "sgd",
+    "momentum": 0.9,
+    "weight_decay": 0.0,
+    "scheduler": "none",
+    "augment": false,
+    "seed": 42,
+    "device": "auto",
+    "num_workers": 4,
+    "cudnn_benchmark": true,
+    "resume": true,
+    "limit_batches": 0,
+    "out": "./results",
+    "tag": "lr001"
+  },
+  "env": {
+    "torch": "2.8.0+cu128",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cuda": "12.8",
+    "cudnn": 91002
+  }
+}

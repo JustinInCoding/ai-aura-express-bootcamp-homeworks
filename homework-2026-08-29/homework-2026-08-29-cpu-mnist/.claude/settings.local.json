@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/justinwang/Developer/ai-aura-express-bootcamp/machine-learning-and-deep-learning/**)",
+      "Bash(mkdir -p homework-2026-08-29-gpu)",
+      "Bash(cp homework-2026-08-29/models.py homework-2026-08-29/compute_stats.py homework-2026-08-29/.gitignore homework-2026-08-29-gpu/)",
+      "Bash(md5 homework-2026-08-29/models.py homework-2026-08-29-gpu/models.py)"
+    ]
+  }
+}
