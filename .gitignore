@@ -241,3 +241,5 @@ project-workshop-2026-08-15/workbuddy-tooling
 
 # .pdf
 **/*.pdf
+homework-2026-11-14/douban-comments/dataset/comments.csv
+homework-2026-11-14/douban-comments/dataset/movies.csv
