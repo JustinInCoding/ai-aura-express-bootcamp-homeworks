@@ -20,3 +20,7 @@ python3 -m venv .venv
 .venv/bin/jupyter nbconvert --to notebook --execute --inplace 01_eda.ipynb
 
 ```
+
+### 常用统计学可视化图表
+
+常用的统计学中可视化展示的图形类型有哪些，每种类型都用来做什么，怎么看，帮我写一个 jupyter notebook 来进行详细说明
