@@ -1,0 +1,4 @@
+jieba>=0.42
+jupyter>=1.0
+ipykernel>=6.29
+tqdm>=4.66
